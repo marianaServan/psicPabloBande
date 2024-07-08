@@ -5,7 +5,8 @@ main{
     font-family: $secondary_font;
     section{
         background-image: url(../images/banner_desktop.png);
-        background-repeat: repeat;
+        background-color: $primary_color;
+        background-repeat: no-repeat;
         background-size: 100%;
         display: flex;
         flex-direction: column;
@@ -191,6 +192,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    div:last-child {
+        margin-top: 50px;
+    }
     .opinion { 
         width: 80%;
         margin: 10px;

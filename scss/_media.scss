@@ -54,7 +54,7 @@
 
     main {
         section {
-            align-items: center;
+            min-height: 50vh;
         }
     }
 
@@ -71,6 +71,7 @@
 
     .botones_inicio {
         justify-content: center;
+        width: 100%;
         a {
             button {
                 font-size: 1.5rem;

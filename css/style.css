@@ -106,7 +106,8 @@ main {
 }
 main section {
   background-image: url(../images/banner_desktop.png);
-  background-repeat: repeat;
+  background-color: #33415c;
+  background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
   flex-direction: column;
@@ -274,6 +275,9 @@ main section hr {
   flex-direction: column;
   align-items: center;
 }
+.cards_opiniones div:last-child {
+  margin-top: 50px;
+}
 .cards_opiniones .opinion {
   width: 80%;
   margin: 10px;
@@ -331,6 +335,10 @@ footer div h2 a .clic {
   transition: font-weight 0.3s ease;
 }
 footer div h2 a .clic:hover {
+  font-weight: 200;
+  text-decoration-thickness: 2px;
+}
+footer div h2 a .clic:active {
   font-weight: 200;
   text-decoration-thickness: 2px;
 }
@@ -392,7 +400,7 @@ footer .botones_inicio button {
     align-items: start;
   }
   main section {
-    align-items: center;
+    min-height: 50vh;
   }
   /* Inicio */
   .cards_inicio, .cards_contacto {
@@ -406,6 +414,7 @@ footer .botones_inicio button {
   }
   .botones_inicio {
     justify-content: center;
+    width: 100%;
   }
   .botones_inicio a button {
     font-size: 1.5rem;
