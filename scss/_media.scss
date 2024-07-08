@@ -1,0 +1,128 @@
+/* Media queries */
+
+/* Tablet */
+@media screen and (max-width: 910px) {
+
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    /* General */
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+    }
+
+    /* Header */
+    header {
+        flex-direction: row;
+        height: auto;
+        text-align: left;
+        background-color: $contrast_color;
+        .header_brand {
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            div {
+                margin-left: 5%;
+                h1 {
+                    font-size: 2.5rem;
+                }
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        hr {
+            display: none;
+        }
+        nav {
+            div {
+                flex-direction: column;
+            }
+        }
+    }
+    .imagen_perfil{
+        width: 30%;
+    }
+    .link_header {
+        align-items: start;
+    }
+
+    main {
+        section {
+            align-items: center;
+        }
+    }
+
+    /* Inicio */
+    .cards_inicio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a {
+            margin-bottom: 10px; 
+            width: 90%;
+        }
+    }
+
+    .botones_inicio {
+        justify-content: center;
+        a {
+            button {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    /* Sobre Mi */
+    .cards_sobreMi {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.6rem;
+        h4 {
+            font-size: 2rem;
+        }
+        .especialidades, .matricula, .idiomas, .enfermedades {
+            padding-top: 100px;
+            width: 100%;
+        }
+    }
+
+    /* Contacto */
+    .cards_contacto {
+        a {
+            div{
+                h4 {
+                    font-size: 3rem;
+                } 
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    /* Precio */
+    .card_precio {
+        width: 95%;
+        h4 {
+            font-size: 2rem;
+        } 
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* Opiniones */
+    .cards_opiniones {
+        .opinion {
+            width: 100%;
+        }
+    }
+    
+}

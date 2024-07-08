@@ -24,11 +24,6 @@ a {
   text-decoration: none;
 }
 
-/* Grillas */
-footer {
-  grid-area: footer;
-}
-
 /* Header */
 .menu_fijo {
   position: sticky;
@@ -302,6 +297,7 @@ main section hr {
 
 /* Footer */
 footer {
+  grid-area: footer;
   background-image: url(../images/banner_footer.png);
   background-repeat: repeat;
   background-size: 100%;
@@ -351,6 +347,104 @@ footer .botones_inicio {
 footer .botones_inicio button {
   padding: 20px 30px;
   border-radius: 50px;
+}
+
+/* Media queries */
+/* Tablet */
+/* Mobile */
+@media screen and (max-width: 480px) {
+  /* General */
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer";
+  }
+  /* Header */
+  header {
+    flex-direction: row;
+    height: auto;
+    text-align: left;
+    background-color: #ffffff;
+  }
+  header .header_brand {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+  }
+  header .header_brand div {
+    margin-left: 5%;
+  }
+  header .header_brand div h1 {
+    font-size: 2.5rem;
+  }
+  header .header_brand div h2 {
+    font-size: 1.5rem;
+  }
+  header hr {
+    display: none;
+  }
+  header nav div {
+    flex-direction: column;
+  }
+  .imagen_perfil {
+    width: 30%;
+  }
+  .link_header {
+    align-items: start;
+  }
+  main section {
+    align-items: center;
+  }
+  /* Inicio */
+  .cards_inicio, .cards_contacto {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards_inicio a, .cards_contacto a {
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  .botones_inicio {
+    justify-content: center;
+  }
+  .botones_inicio a button {
+    font-size: 1.5rem;
+  }
+  /* Sobre Mi */
+  .cards_sobreMi {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.6rem;
+  }
+  .cards_sobreMi h4 {
+    font-size: 2rem;
+  }
+  .cards_sobreMi .especialidades, .cards_sobreMi .matricula, .cards_sobreMi .idiomas, .cards_sobreMi .enfermedades {
+    padding-top: 100px;
+    width: 100%;
+  }
+  /* Contacto */
+  .cards_contacto a div h4 {
+    font-size: 3rem;
+  }
+  .cards_contacto a div p {
+    font-size: 1.5rem;
+  }
+  /* Precio */
+  .card_precio {
+    width: 95%;
+  }
+  .card_precio h4 {
+    font-size: 2rem;
+  }
+  .card_precio p {
+    font-size: 1.5rem;
+  }
+  /* Opiniones */
+  .cards_opiniones .opinion {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
