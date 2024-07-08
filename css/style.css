@@ -1,0 +1,356 @@
+@font-face {
+  font-family: "jost";
+  src: url(../font/Jost-Regular.ttf);
+}
+@font-face {
+  font-family: "jost_light";
+  src: url(../font/Jost-VariableFont_wght.ttf);
+}
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Fuentes estilos y grilla */
+body {
+  font-family: "jost";
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "nav main" "nav footer";
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Grillas */
+footer {
+  grid-area: footer;
+}
+
+/* Header */
+.menu_fijo {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  color: #33415c;
+  padding: 20px;
+  width: 100%;
+  text-align: right;
+  height: 100vh;
+}
+header h1 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+header h2 {
+  font-size: 1.1rem;
+  color: #d3b57c;
+}
+header hr {
+  width: 100%;
+  color: #33415c;
+  opacity: 0.5;
+}
+header nav {
+  width: 100%;
+}
+header nav div {
+  display: flex;
+  justify-content: end;
+}
+
+.imagen_perfil {
+  width: 60%;
+}
+
+.link_header {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 80%;
+}
+.link_header li {
+  list-style: none;
+  font-family: "jost_light";
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+.link_header li:hover {
+  color: #d3b57c;
+}
+.link_header li .reserva_link {
+  color: #d3b57c;
+  font-weight: 300;
+}
+.link_header li .reserva_link:hover {
+  font-weight: 400;
+}
+
+.burguer {
+  border-color: #33415c;
+}
+.burguer svg {
+  fill: #33415c;
+}
+
+/* Main */
+main {
+  grid-area: main;
+  color: #ffffff;
+  font-family: "jost_light";
+}
+main section {
+  background-image: url(../images/banner_desktop.png);
+  background-repeat: repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 8%;
+  min-height: 100vh;
+}
+main section h2 {
+  font-weight: 100;
+  font-size: 5rem;
+  text-align: left;
+}
+main section h2 span {
+  font-weight: normal;
+}
+main section h3 {
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #979dac;
+}
+main section hr {
+  width: 100px;
+  height: 5px;
+  border: none;
+  background-color: #d3b57c;
+  opacity: 1;
+}
+
+/* Inicio */
+.video {
+  display: flex;
+  justify-content: center;
+}
+.video iframe {
+  margin: 30px 0;
+}
+
+.botones_inicio {
+  display: flex;
+  justify-content: start;
+}
+.botones_inicio a button {
+  background-color: #d3b57c;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.botones_inicio a button span {
+  margin: 10px 15px;
+}
+.botones_inicio a button .vertical_line {
+  display: inline-block;
+  width: 1px;
+  height: 2rem;
+  background-color: #ffffff;
+}
+.botones_inicio a .boton_sinfondo {
+  background-color: transparent;
+}
+.botones_inicio a:hover {
+  filter: brightness(0.85);
+}
+
+.cards_inicio, .cards_contacto {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.cards_inicio a, .cards_contacto a {
+  color: #ffffff;
+  width: 48%;
+}
+.cards_inicio a div, .cards_contacto a div {
+  background-color: #33415c;
+  filter: brightness(0.85);
+  padding: 8%;
+}
+.cards_inicio a div h4, .cards_contacto a div h4 {
+  font-weight: 200;
+  font-size: 3rem;
+}
+.cards_inicio a div i, .cards_contacto a div i {
+  font-size: 3rem;
+  color: #d3b57c;
+}
+.cards_inicio a div:hover, .cards_contacto a div:hover {
+  filter: brightness(0.75);
+}
+
+/* Sobre Mi */
+.config_cards_sobreMi, .cards_sobreMi .enfermedades, .cards_sobreMi .idiomas, .cards_sobreMi .matricula, .cards_sobreMi .especialidades {
+  width: 30%;
+  padding: 20px;
+  padding-top: 60px;
+  margin: 10px 0;
+}
+
+.cards_sobreMi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #33415c;
+  font-weight: 400;
+}
+.cards_sobreMi .especialidades {
+  background-image: url(../images/bg_especialidades.png);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+.cards_sobreMi .matricula {
+  background-image: url(../images/bg_matricula.png);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+.cards_sobreMi .matricula hr {
+  width: 100%;
+  height: 1px;
+  background-color: #33415c;
+  opacity: 0.5;
+}
+.cards_sobreMi .idiomas {
+  background-image: url(../images/bg_idiomas.png);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+.cards_sobreMi .enfermedades {
+  background-image: url(../images/bg_enfermedades.png);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+/* Contacto */
+.cards_contacto a {
+  width: 30%;
+}
+.cards_contacto a div h4 {
+  font-weight: 200;
+  font-size: 2rem;
+}
+.cards_contacto a div i {
+  font-size: 2rem;
+  color: #d3b57c;
+}
+
+/* Precio */
+.card_precio {
+  color: #33415c;
+  font-weight: 400;
+  padding: 20px;
+  padding-top: 90px;
+  margin: 10px 0;
+  background-image: url(../images/bg_precio.png);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+/* Opiniones */
+.cards_opiniones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards_opiniones .opinion {
+  width: 80%;
+  margin: 10px;
+  background-color: #33415c;
+  filter: brightness(0.85);
+  padding: 4%;
+}
+.cards_opiniones .opinion p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.cards_opiniones .opinion div {
+  display: flex;
+  justify-content: center;
+}
+.cards_opiniones .opinion div i {
+  margin: 0 5px;
+  color: #eecd35;
+}
+
+/* Footer */
+footer {
+  background-image: url(../images/banner_footer.png);
+  background-repeat: repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+footer div {
+  width: 80%;
+}
+footer div h2 {
+  font-family: "jost_light";
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+footer div h2 .cita {
+  font-weight: 300;
+}
+footer div h2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer div h2 a .clic {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-thickness 0.3s ease;
+  transition: font-weight 0.3s ease;
+}
+footer div h2 a .clic:hover {
+  font-weight: 200;
+  text-decoration-thickness: 2px;
+}
+footer hr {
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+footer .botones_inicio {
+  margin: 50px 0;
+  justify-content: center;
+}
+footer .botones_inicio button {
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

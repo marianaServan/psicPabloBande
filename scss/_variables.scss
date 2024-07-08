@@ -1,0 +1,19 @@
+// Colores //
+$primary_color: #33415c;
+$secondary_color: #979dac;
+$tertiary_color: #d3b57c;
+$contrast_color: #ffffff;
+
+// Fuentes //
+@font-face {
+    font-family: 'jost';
+    src: url(../font/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'jost_light';
+    src: url(../font/Jost-VariableFont_wght.ttf);
+}
+$principal_font: 'jost';
+$secondary_font: 'jost_light';
+

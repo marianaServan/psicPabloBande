@@ -1,0 +1,54 @@
+/* Footer */
+footer {
+    background-image: url(../images/banner_footer.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    div {
+        width: 80%;
+        h2 {
+            font-family: $secondary_font;
+            font-weight: 100;
+            font-size: 2.5rem;
+            text-align: center;
+            color: $contrast_color;
+            .cita {
+                font-weight: 300;
+            }
+            a {
+                text-decoration: none;
+                color: $contrast_color;
+                .clic {
+                    text-decoration: underline;
+                    text-underline-offset: 15px;
+                    text-decoration-thickness: 1px;
+                    transition: text-decoration-thickness 0.3s ease;
+                    transition: font-weight 0.3s ease;
+                    &:hover {
+                        font-weight: 200;
+                        text-decoration-thickness: 2px;
+                    }
+                }
+            }
+            
+        }
+    }
+    hr {
+        height: 2px;
+        width: 100%;
+        background-color: $contrast_color;
+        opacity: .8;
+    }
+    .botones_inicio {
+        margin: 50px 0;
+        justify-content: center;
+        button {
+            padding: 20px 30px;
+            border-radius: 50px;
+        }
+    }
+    
+}

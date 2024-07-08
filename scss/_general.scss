@@ -1,0 +1,25 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Fuentes estilos y grilla */
+body{
+    font-family: $principal_font;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    "nav main"
+    "nav footer";
+}
+
+a {
+    text-decoration: none;
+}
+/* Grillas */
+
+footer {
+    grid-area: footer;
+}
+
