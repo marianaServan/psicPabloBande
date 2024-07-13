@@ -109,7 +109,7 @@ main{
 /* Sobre Mi */
 
 .config_cards_sobreMi {
-    width: 30%;
+    width: 20vw;
     padding: 20px;
     padding-top: 60px;
     margin: 10px 0;
@@ -178,7 +178,8 @@ main{
     padding-top: 90px;
     margin: 10px 0;
     background-image: url(../images/bg_precio.png);
-    background-repeat: repeat;
+    background-color: $contrast_color;
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
