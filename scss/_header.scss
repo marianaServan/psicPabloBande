@@ -7,10 +7,6 @@
 
 header{
     grid-area: nav;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: end;
     color: $primary_color;
     padding: 20px;
     width: 100%;
@@ -30,11 +26,17 @@ header{
         opacity: .5;
     }
     nav {
-        width: 100%;
         div {
             display: flex;
-            justify-content: end;
+            flex-direction: column;
+            justify-content: start;
+            align-items: end;
+            width: 100%;
         }
+       /*  div {
+            display: flex;
+            justify-content: end;
+        } */
     }
 }
 
