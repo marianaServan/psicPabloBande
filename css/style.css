@@ -435,7 +435,7 @@ footer .botones_inicio button {
     font-size: 1.5rem;
   }
   .video iframe {
-    height: fit-content;
+    height: 50vw;
   }
   /* Sobre Mi */
   .cards_sobreMi {
