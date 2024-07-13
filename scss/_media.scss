@@ -90,6 +90,12 @@
         }
     }
 
+    .video {
+        iframe {
+            height: fit-content;
+        }
+    }
+
     /* Sobre Mi */
     .cards_sobreMi {
         width: 100%;
