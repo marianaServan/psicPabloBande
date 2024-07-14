@@ -488,7 +488,7 @@ footer .botones_inicio button {
     padding: 20px;
   }
   .cards_opiniones .opinion p {
-    text-align: center;
+    text-align: left;
   }
   footer {
     width: 100vw;
