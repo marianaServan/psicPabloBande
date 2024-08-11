@@ -101,6 +101,9 @@
         a {
             margin-bottom: 10px; 
             width: 90%;
+            p {
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -150,7 +153,12 @@
     }
 
     /* Precio */
-    .card_precio {
+    .cards_precio {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .config_card_precio {
         width: 95%;
         h4 {
             font-size: 2rem;
@@ -159,6 +167,30 @@
             font-size: 1.5rem;
         }
     }
+
+    .sesion_regular {
+        div {
+            flex-direction: column;
+            justify-content: start;   
+            font-size: 1.3rem;
+            label {
+                margin-top: 10px;
+                div {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+
+    .sesion_gratis {
+        p:last-child {
+            font-size: 1.8rem;
+        }
+    }
+
+   #text {
+    margin-top: 10px;
+   }
 
     /* Opiniones */
     .cards_opiniones {

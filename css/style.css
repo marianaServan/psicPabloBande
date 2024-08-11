@@ -283,6 +283,10 @@ main section hr {
 .sesion_gratis {
   background-image: url(../images/bg_gratis.png);
 }
+.sesion_gratis p:last-child {
+  color: #d3b57c;
+  font-size: 1.3rem;
+}
 
 input[type=checkbox] {
   display: none;
@@ -497,6 +501,9 @@ footer .botones_inicio button {
     margin-bottom: 10px;
     width: 90%;
   }
+  .cards_inicio a p, .cards_contacto a p {
+    font-size: 1.5rem;
+  }
   .botones_inicio {
     justify-content: center;
     width: 100%;
@@ -529,14 +536,35 @@ footer .botones_inicio button {
     font-size: 1.5rem;
   }
   /* Precio */
-  .card_precio {
+  .cards_precio {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .config_card_precio, .sesion_regular, .sesion_gratis {
     width: 95%;
   }
-  .card_precio h4 {
+  .config_card_precio h4, .sesion_regular h4, .sesion_gratis h4 {
     font-size: 2rem;
   }
-  .card_precio p {
+  .config_card_precio p, .sesion_regular p, .sesion_gratis p {
     font-size: 1.5rem;
+  }
+  .sesion_regular div {
+    flex-direction: column;
+    justify-content: start;
+    font-size: 1.3rem;
+  }
+  .sesion_regular div label {
+    margin-top: 10px;
+  }
+  .sesion_regular div label div {
+    flex-direction: row;
+  }
+  .sesion_gratis p:last-child {
+    font-size: 1.8rem;
+  }
+  #text {
+    margin-top: 10px;
   }
   /* Opiniones */
   .cards_opiniones .opinion {

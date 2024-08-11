@@ -200,6 +200,10 @@ main{
 .sesion_gratis {
     @extend .config_card_precio;
     background-image: url(../images/bg_gratis.png);
+    p:last-child {
+        color: $tertiary_color;
+        font-size: 1.3rem;
+    }
 }
 
 // Ocultamos el checkbox real
@@ -209,29 +213,29 @@ input[type="checkbox"] {
   
 // Estilizamos el botón que actuará como disparador
 label {
-display: inline-block;
-padding: 10px 20px;
-background-color: $tertiary_color;
-border: none;
-border-radius: 20px;
-color: $contrast_color;
-font-size: .8rem;
-div {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: $tertiary_color;
     border: none;
     border-radius: 20px;
     color: $contrast_color;
     font-size: .8rem;
-    display: flex;
-    align-items: center;
-    .vertical_line {
-        display: inline-block;
-        width: 1px;
-        height: 2rem;
-        background-color: $contrast_color;
-        margin: 0px 5px;
+    div {
+        background-color: $tertiary_color;
+        border: none;
+        border-radius: 20px;
+        color: $contrast_color;
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+        .vertical_line {
+            display: inline-block;
+            width: 1px;
+            height: 2rem;
+            background-color: $contrast_color;
+            margin: 0px 5px;
+        }
     }
-}
 }
   
 // El texto que aparecerá
