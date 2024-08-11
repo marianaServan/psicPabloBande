@@ -255,16 +255,72 @@ main section hr {
 }
 
 /* Precio */
-.card_precio {
+.cards_precio {
+  display: flex;
+  justify-content: start;
+}
+
+.config_card_precio, .sesion_gratis, .sesion_regular {
   color: #33415c;
   font-weight: 400;
   padding: 20px;
   padding-top: 90px;
-  margin: 10px 0;
-  background-image: url(../images/bg_precio.png);
+  margin: 10px 20px 10px 0px;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.sesion_regular {
+  background-image: url(../images/bg_precio.png);
+}
+.sesion_regular div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sesion_gratis {
+  background-image: url(../images/bg_gratis.png);
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d3b57c;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+label div {
+  background-color: #d3b57c;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+label div .vertical_line {
+  display: inline-block;
+  width: 1px;
+  height: 2rem;
+  background-color: #ffffff;
+  margin: 0px 5px;
+}
+
+#text {
+  display: none;
+  height: min-content;
+}
+
+input[type=checkbox]:checked + label + #text {
+  display: block;
 }
 
 /* Opiniones */

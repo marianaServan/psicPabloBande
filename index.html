@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WM6KWHZL');</script>
     <!-- Meta tags -->
     <meta name="description" content="Pablo Bande, psicoanalista de orientación lacaniana y divulgador. Consultas online. Tratamiento en el curso de enfermedades relacionadas con la ansiedad, angustia, insomnio, estrés, depresión.">
     <meta name="keywords" content="Psicólogo, Psicoanalista, psicoanalista lacaniano, psicoanalista argentino, Ansiedad, Angustia, Insomnio, Deseo sexual inhibido, Duelo, Depresión, Baja autoestima, Estrés laboral, consulta online">
     <!-- Open Graph tags -->
-    <meta property="og:title" content="Psic. Pablo Bande" />
+    <meta property="og:title" content="Lic. Pablo Bande" />
     <meta property="og:description" content="Psicoanalista de orientación lacaniana y divulgador" />
     <meta property="og:image" content="https://pablobande.com/images/og_image.png" />
     <meta property="og:url" content="https://pablobande.com/" />
@@ -20,6 +26,11 @@
     <title>Psic. Pablo Bande</title>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WM6KWHZL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="menu_fijo">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -193,10 +204,35 @@
             <h2>Precio</h2>
             <h3>¿Cuánto cuesta mi servicio?</h3>
             <hr>
-            <div class="card_precio">
-                <h4>Psicoanálisis Online</h4>
-                <p>Duración de la sesión: 50 minutos</p>
-                <p>$1.800 (UYU)</p>
+            <div class="cards_precio">
+                <div class="sesion_gratis">
+                    <h4>Sesión de prueba</h4>
+                    <p>Duración de la sesión: 20 minutos</p>                    
+                    <p>Online</p>
+                    <p>Gratis</p>
+                </div>
+                <div class="sesion_regular">
+                    <h4>Sesiones regulares</h4>
+                    <p>Duración de la sesión: 60 minutos</p>
+                    <p>Online</p>
+
+                    <div>
+                        <!-- Checkbox invisible y su etiqueta -->
+                        <input type="checkbox" id="toggle">
+                        <label class="botones_inicio" for="toggle" id="ver_precio">
+                                <div>
+                                    <span>VER PRECIO</span>
+                                    <div class="vertical_line"></div>
+                                    <span><i class="bi bi-chevron-right"></i></span>
+                                </div>                   
+                        </label>
+
+                        <!-- Texto que aparecerá al hacer clic en el botón -->
+                        <div id="text">
+                            $1.800 (UYU)
+                        </div>
+                    </div>                    
+                </div>
             </div>
         </section>
 

@@ -171,17 +171,82 @@ main{
 
 /* Precio */
 
-.card_precio {
+.cards_precio {
+    display: flex;
+    justify-content: start;
+}
+
+.config_card_precio {
     color: $primary_color;
     font-weight: 400;
     padding: 20px;
     padding-top: 90px;
-    margin: 10px 0;
-    background-image: url(../images/bg_precio.png);
+    margin: 10px 20px 10px 0px;
     background-color: $contrast_color;
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+.sesion_regular {
+    @extend .config_card_precio;
+    background-image: url(../images/bg_precio.png);
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.sesion_gratis {
+    @extend .config_card_precio;
+    background-image: url(../images/bg_gratis.png);
+}
+
+// Ocultamos el checkbox real
+input[type="checkbox"] {
+    display: none;
+  }
+  
+// Estilizamos el botón que actuará como disparador
+label {
+display: inline-block;
+padding: 10px 20px;
+background-color: $tertiary_color;
+border: none;
+border-radius: 20px;
+color: $contrast_color;
+font-size: .8rem;
+div {
+    background-color: $tertiary_color;
+    border: none;
+    border-radius: 20px;
+    color: $contrast_color;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    .vertical_line {
+        display: inline-block;
+        width: 1px;
+        height: 2rem;
+        background-color: $contrast_color;
+        margin: 0px 5px;
+    }
+}
+}
+  
+// El texto que aparecerá
+#text {
+display: none;
+height: min-content;
+}
+
+// Cuando el checkbox está seleccionado, mostramos el texto
+input[type="checkbox"]:checked + label + #text {
+display: block;
+}
+
+
+
 
 /* Opiniones */
 
