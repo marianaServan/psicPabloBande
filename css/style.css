@@ -254,6 +254,12 @@ main section hr {
   color: #d3b57c;
 }
 
+.botones_contacto {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Precio */
 .cards_precio {
   display: flex;
@@ -481,6 +487,10 @@ footer .botones_inicio button {
   .config_cards_sobreMi, .cards_sobreMi .especialidades, .cards_sobreMi .matricula, .cards_sobreMi .idiomas, .cards_sobreMi .enfermedades {
     width: 48%;
   }
+  /* Contacto */
+  .botones_contacto {
+    width: 55%;
+  }
 }
 /* Mobile */
 @media screen and (max-width: 480px) {
@@ -534,6 +544,18 @@ footer .botones_inicio button {
   }
   .cards_contacto a div p {
     font-size: 1.5rem;
+  }
+  .botones_contacto {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .botones_contacto div {
+    margin-bottom: 35px;
+  }
+  .botones_contacto div a button .vertical_line {
+    display: none;
   }
   /* Precio */
   .cards_precio {
