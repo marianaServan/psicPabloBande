@@ -204,6 +204,13 @@ main section hr {
 }
 
 /* Sobre Mi */
+.sobreMi_presentacion {
+  text-align: justify;
+  font-size: 1.5rem; /* 
+font-family: $secondary_font; */
+  font-weight: 200;
+}
+
 .config_cards_sobreMi, .cards_sobreMi .enfermedades, .cards_sobreMi .idiomas, .cards_sobreMi .matricula, .cards_sobreMi .especialidades {
   width: 20vw;
   padding: 20px;

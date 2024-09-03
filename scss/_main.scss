@@ -108,6 +108,13 @@ main{
 
 /* Sobre Mi */
 
+.sobreMi_presentacion {
+    text-align: justify;
+    font-size: 1.5rem;/* 
+    font-family: $secondary_font; */
+    font-weight: 200;
+}
+
 .config_cards_sobreMi {
     width: 20vw;
     padding: 20px;
