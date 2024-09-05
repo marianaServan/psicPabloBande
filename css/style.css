@@ -205,8 +205,8 @@ main section hr {
 
 /* Sobre Mi */
 .sobreMi_presentacion {
-  text-align: justify;
-  font-size: 1.5rem; /* 
+  text-align: left;
+  font-size: 1.2rem; /* 
 font-family: $secondary_font; */
   font-weight: 200;
 }
