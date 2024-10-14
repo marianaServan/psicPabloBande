@@ -211,7 +211,7 @@ font-family: $secondary_font; */
   font-weight: 200;
 }
 
-.config_cards_sobreMi, .cards_sobreMi .enfermedades, .cards_sobreMi .idiomas, .cards_sobreMi .matricula, .cards_sobreMi .especialidades {
+.config_cards_sobreMi, .cards_sobreMi .idiomas, .cards_sobreMi .enfermedades, .cards_sobreMi .especialidades {
   width: 20vw;
   padding: 20px;
   padding-top: 60px;
@@ -222,30 +222,32 @@ font-family: $secondary_font; */
 }
 
 .cards_sobreMi {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   color: #33415c;
   font-weight: 400;
+  /* .matricula {
+      @extend .config_cards_sobreMi;
+      background-image: url(../images/bg_matricula.png);
+      hr {
+          width: 100%;
+          height: 1px;
+          background-color: $primary_color;
+          opacity: .5;
+      }
+  } */
 }
 .cards_sobreMi .especialidades {
   background-image: url(../images/bg_especialidades.png);
 }
-.cards_sobreMi .matricula {
-  background-image: url(../images/bg_matricula.png);
-}
-.cards_sobreMi .matricula hr {
-  width: 100%;
-  height: 1px;
-  background-color: #33415c;
-  opacity: 0.5;
+.cards_sobreMi .enfermedades {
+  background-image: url(../images/bg_enfermedades.png);
 }
 .cards_sobreMi .idiomas {
   background-image: url(../images/bg_idiomas.png);
-}
-.cards_sobreMi .enfermedades {
-  background-image: url(../images/bg_enfermedades.png);
 }
 
 /* Contacto */
@@ -491,7 +493,7 @@ footer .botones_inicio button {
     width: 100%;
   }
   /* Sobre Mi */
-  .config_cards_sobreMi, .cards_sobreMi .especialidades, .cards_sobreMi .matricula, .cards_sobreMi .idiomas, .cards_sobreMi .enfermedades {
+  .config_cards_sobreMi, .cards_sobreMi .especialidades, .cards_sobreMi .enfermedades, .cards_sobreMi .idiomas {
     width: 48%;
   }
   /* Contacto */
